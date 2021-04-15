@@ -1,0 +1,19 @@
+@import "src/assets/styles/variables.scss";
+
+.ui-spinner-container {
+    z-index: 999999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+}
+.ui-spinner-container .ui-spinner{
+    margin:auto;
+    z-index: 101;
+}
+.ui-spinner-container .ui-spinner >>> circle{
+    stroke: $primary !important;
+}

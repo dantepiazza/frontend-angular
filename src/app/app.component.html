@@ -1,0 +1,14 @@
+<mat-sidenav-container class="ui-interface">
+    <mat-sidenav #sidenav class="ui-sidenav" [mode]="(screen.width > 768 ? 'side' : 'over')" [opened]="screen.width > 768 && interfase">
+        <app-ui-menu></app-ui-menu>
+    </mat-sidenav>
+
+    <mat-sidenav-content class="ui-canva" [ngClass]="!interfase ? 'ui-canva-full' : ''">
+      <app-ui-toolbar></app-ui-toolbar>
+        
+      <router-outlet></router-outlet>        
+    </mat-sidenav-content>
+</mat-sidenav-container>
+  
+<app-ui-spinner></app-ui-spinner>
+<app-ui-splash></app-ui-splash>

@@ -1,0 +1,12 @@
+<div class="ui-dialog">
+  <h3 class="ui-dialog-title ui-title" mat-dialog-title>{{data.title}}</h3>
+
+  <div class="ui-dialog-content" mat-dialog-content>
+    <div [innerHTML]="data.message"></div>
+  </div>
+
+  <div class="ui-dialog-actions" mat-dialog-actions>
+    <button mat-button (click)="onCancel()" *ngIf="data.buttonCancelText !== ''">{{data.buttonCancelText}}</button>
+    <button mat-button color="primary" cdkFocusInitial [mat-dialog-close]="true" (click)="onConfirm()" *ngIf="data.buttonConfirmText !== ''">{{data.buttonConfirmText}}</button>
+  </div>
+</div>

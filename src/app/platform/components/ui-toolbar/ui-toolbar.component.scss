@@ -1,0 +1,20 @@
+.ui-toolbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 998;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.12);
+    background: #fff;
+    color: #B4B4B4;
+}
+.ui-toolbar .ui-toolbar-title{
+    width: 100%;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #6D6D6D;
+}

@@ -1,0 +1,40 @@
+@import "src/assets/styles/variables.scss";
+
+.ui-splash {
+    z-index: 999999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: #fff;
+}
+.ui-splash .ui-splash-container{
+    max-width: 300px;
+}
+.ui-splash-container .ui-splash-image{
+    margin: 0px auto 30px;
+    text-align: center;
+    width: 140px;
+    height: 97px;
+}
+.ui-splash-container .ui-splash-loader{
+    margin:auto;
+    z-index: 101;
+    width: 150px;
+    height: 2px;
+}
+.ui-splash-container .ui-splash-description{
+    margin-top: 20px;
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+    font-weight: 400;
+}
+.ui-splash-container .ui-spinner >>> circle{
+    stroke: $primary !important;
+}

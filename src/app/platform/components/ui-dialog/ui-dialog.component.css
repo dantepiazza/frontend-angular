@@ -1,0 +1,23 @@
+.ui-dialog{
+
+}
+.ui-dialog .ui-dialog-title{
+    margin-bottom: 30px;
+}
+.ui-dialog .ui-dialog-content{
+    font-size: 14px;
+    font-weight: 300;
+    color: #666;
+}
+.ui-dialog .ui-dialog-actions{
+    justify-content: flex-end;
+}
+.ui-dialog .ui-dialog-actions .mat-button{
+    padding: 0px 9px;
+    margin: 0;
+}
+.mat-dialog-container {
+    transform: none;
+    padding: 20px !important;
+    overflow: hidden;
+}

@@ -1,0 +1,7 @@
+{
+    "/apipath":{
+        "target": "https://apiurl.com",
+        "secure": false,
+        "changeOrigin": true
+    }
+}

@@ -1,0 +1,16 @@
+<div class="ui-splash" *ngIf="splashShow">
+	<div class="ui-splash-container">
+		<div class="ui-splash-image">
+			<img *ngIf="splashStatus" src="../../../../assets/images/logo-color.svg">
+			<img *ngIf="!splashStatus" src="../../../../assets/images/logo-grey.svg">
+		</div>
+		
+		<mat-progress-bar class="ui-splash-loader" *ngIf="splashStatus" mode="indeterminate" ></mat-progress-bar>
+		
+		<div class="ui-splash-description">{{splashMessage}}</div>
+
+		<div class="ui-splash-refresh" *ngIf="!splashStatus">
+			<button mat-stroked-button color="primary" class="ui-button" (click)="onRefresh()">Actualizar</button>
+		</div>
+	</div>
+</div>

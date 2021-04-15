@@ -1,0 +1,25 @@
+.ui-interface{
+    height: 100%;
+}
+.ui-sidenav{
+    width: 90vw;
+    max-width: 220px;
+    background: #2C333B;
+    color:#CBD4DB;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ui-canva{
+    padding: 65px 0px 0px;
+}
+.ui-canva.ui-canva-full{
+    padding: 0px;
+}
+  
+@media only all and (max-width: 600px) {
+    .ui-canva{
+        padding: 56px 0px 0px;
+    }
+}

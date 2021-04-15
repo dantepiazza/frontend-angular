@@ -1,0 +1,9 @@
+<mat-toolbar class="ui-toolbar" [ngClass]="options.hasHeader ? '' : 'mat-elevation-z2'"  *ngIf="options.show">
+  <mat-toolbar-row>
+    <button mat-icon-button (click)="onMenuToggle()" *ngIf="options.menuButtonShow">
+      <mat-icon aria-label="Menu">menu</mat-icon>
+    </button>        
+    
+    <h6 class="ui-toolbar-title">{{options.title}}</h6>
+  </mat-toolbar-row>
+</mat-toolbar>
